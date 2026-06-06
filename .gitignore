@@ -1,0 +1,10 @@
+data/wiki_movie_plots_deduped.csv
+data/*.pkl
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.vscode/
+.idea/
