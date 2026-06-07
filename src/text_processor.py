@@ -15,6 +15,3 @@ def ClearText(text, use_stemmer=True):
         filteredText = [w for w in words if w not in ENG_STOP_WORDS]
      
     return filteredText
-
-text = input("Unesi tekst: ")
-print(ClearText(text))
