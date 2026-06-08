@@ -20,10 +20,7 @@ def LoadIndex(filepath):
 
 
 def VectorSearch(query_tokens, index_data, use_champions=False):
-    """
-    Radi pretragu koristeći TF-IDF i Kosinusnu sličnost za slobodan tekst.
-    Vraća listu parova: [(doc_id, skor), (doc_id, skor)...]
-    """
+    
     pos_index, idf_dict, doc_lengths, champ_lists = index_data
     
     query_tf = {}
@@ -67,10 +64,7 @@ def VectorSearch(query_tokens, index_data, use_champions=False):
 
 
 def PhraseSearch(query_tokens, index_data):
-    """
-    Radi Bulovu pretragu tačne fraze koristeći pozicije.
-    Reči moraju biti tačno jedna pored druge u dokumentu.
-    """
+    
     pos_index = index_data[0] 
     
     for term in query_tokens:
@@ -109,9 +103,7 @@ def PhraseSearch(query_tokens, index_data):
 
 
 def ExecuteQuery(query, index_data, use_stemmer=True, use_champions=False):
-    """
-    Glavna funkcija. Proverava da li je upit pod navodnicima i delegira zadatak.
-    """
+    
     query = query.strip()
     is_phrase = False
     
