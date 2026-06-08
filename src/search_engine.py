@@ -1,7 +1,12 @@
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import math
 import pickle
-from text_processor import ClearText
-from data_loader import LoadDataset
+from src.text_processor import ClearText
+from src.data_loader import LoadDataset
 
 def LoadIndex(filepath):
     """
@@ -124,7 +129,6 @@ def ExecuteQuery(query, index_data, use_stemmer=True, use_champions=False):
         return VectorSearch(query_tokens, index_data, use_champions=use_champions)
 
 
-# TEST BLOK
 if __name__ == "__main__":
     INDEX_PATH = "data/index.pkl"
     JSON_PATH = "data/toy_dataset.json"
