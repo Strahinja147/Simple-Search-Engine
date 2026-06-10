@@ -1,5 +1,7 @@
 # Dokumentacija Projekta: Sistem za pretraživanje informacija (Information Retrieval)
 
+![App Screenshot](assets/screenshot.png)
+
 Ovaj repozitorijum sadrži celokupan izvorni kod za samostalno implementiran sistem za pretraživanje informacija. Projekat je razvijen u jeziku Python, sa ciljem pretraživanja korpusa tekstualnih dokumenata (Wikipedia Movie Plots) uz strogo poštovanje pravila da se ne koriste gotove pretraživačke biblioteke (poput Elasticsearch, Lucene ili scikit-learn TfidfVectorizer modula). Sva logika indeksiranja, parsiranja i rangiranja napisana je od nule.
 
 ## 1. Arhitektura sistema i obrada teksta (Text Processing Pipeline)

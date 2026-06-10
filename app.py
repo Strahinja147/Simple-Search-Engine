@@ -10,7 +10,27 @@ from src.data_loader import LoadDataset
 from src.search_engine import LoadIndex, ExecuteQuery
 from src.text_processor import ClearText  
 
-st.set_page_config(page_title="Simple Search Engine", page_icon="🔍", layout="centered")
+st.set_page_config(page_title="Simple Search Engine", page_icon="🔍", layout="wide")
+
+st.markdown(
+    """
+    <style>
+    /* Podešavanje širine levog panela */
+    [data-testid="stSidebar"] {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    /* Proširenje desnog panela (glavnog dela sa pretragom i rezultatima) na 1100px */
+    [data-testid="stAppViewBlockContainer"] {
+        max-width: 1100px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 INDEX_STEMMED_PATH = "data/index_stemmed.pkl"
 INDEX_RAW_PATH = "data/index_raw.pkl"
