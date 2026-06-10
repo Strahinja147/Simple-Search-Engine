@@ -9,10 +9,7 @@ from src.text_processor import ClearText
 from src.data_loader import LoadDataset
 
 def LoadIndex(filepath):
-    """
-    Učitava naš sačuvan indeks (.pkl fajl) nazad u memoriju.
-    Vraća uređenu torku (tuple) sa 4 rečnika.
-    """
+   
     with open(filepath, 'rb') as file:
         data = pickle.load(file)
     
