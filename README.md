@@ -60,7 +60,7 @@ Ovaj algoritam komunicira sa Stemmer modulom: on analizira koren reči iz tekstu
 
 ```bash
 git clone https://github.com/Strahinja147/Simple-Search-Engine.git
-cd REPO_NAME
+cd Simple-Search-Engine
 pip install streamlit nltk
 ```
 
