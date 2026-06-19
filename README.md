@@ -59,7 +59,7 @@ Ovaj algoritam komunicira sa Stemmer modulom: on analizira koren reči iz tekstu
 **1. Kloniranje repozitorijuma:**
 
 ```bash
-git clone https://github.com/USERNAME/REPO_NAME.git
+git clone https://github.com/Strahinja147/Simple-Search-Engine.git
 cd REPO_NAME
 pip install streamlit nltk
 ```
